@@ -1,0 +1,19 @@
+| T1                    | T2                | typ   | wartość | unifikacja |
+| policjant             | policjant         | true  | true    | TAK        |
+| X                     | Y                 | true  | true    | TAK        |
+| papier                | kartka            | true  | false   | NIE        |
+| 125                   | 125               | true  | true    | TAK        |
+| rzeczownik(alfa)      | alfa              | false | false   | NIE        |
+| punkt(A,b,c)          | punkt(A,b,c)      | true  | true    | TAK        |
+| litera(C)             | slowo(litera)     | true  | false   | NIE        |
+| slowo(C)              | slowo(ania,ewa)   | true  | false   | NIE        |
+| jedzie(student,rower) | jedzie(student,X) | true  | true    | TAK        |
+| 'student'             | student           | true  | true    | TAK        |
+| para(X,Y)             | para(jacek,ewa)   | true  | true    | TAK        |
+| f(X,X)                | f(a,b)            | true  | false   | NIE        |
+| f(X,a(b,c))           | f(Z,a(Z,c))       | true  | true    | TAK        |
+| fu(a,X,f(g(Y)))       | fu(V,h(Z,V),f(V)) | true  | false   | NIE        |
+| fu(a,X,f(g(Y)))       | fu(Y,f(Z),f(Z))   | true  | true    | TAK        |
+| fu(f(X),Y,a)          | fu(f(g(Y)),c,Z)   | true  | true    | TAK        |
+
+Maciej Dylak IO2
